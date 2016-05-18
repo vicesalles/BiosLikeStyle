@@ -1,0 +1,71 @@
+ body {
+            font-family: 'VT323';
+            font-family: monospace;
+            background-color: #3333ff;
+            color:#e6e6ff;
+            font-size: 2em;
+        }
+        a {
+            font-family: 'VT323';
+            text-decoration: none;
+            color: #FFF;
+            font-weight: bold;
+        }
+        a:hover {
+            background-color: #e6e6ff;
+            color: #3333ff;
+            padding: 0, 2em, 0, 2em;
+        }
+        ul {
+            font-family: 'VT323';
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            
+        }
+        p {
+            font-family: 'VT323';
+            color: #e6e6ff;
+        }
+        .why {
+            font-size: 2em;
+            color: #fff;
+        }
+        span {
+            color: #fbfcd4;
+            font-size: 0.5em;
+        }
+        .titol {
+            top: 2em;
+            color: #9999ff;
+        }
+        .contingut{
+            min-width: 700px;
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        }
+        
+        .contingut ul {
+            list-style-type: none;
+            text-align: center;
+            padding: 0;
+            
+        }
+        
+        
+ /* Blinking stuff */
+ .blink {
+  animation: blink-animation 0.8s steps(5, start) infinite;
+  -webkit-animation: blink-animation 0.8s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
