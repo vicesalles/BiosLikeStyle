@@ -2,29 +2,21 @@
 $(document).ready(function () {
 
 
-    //MY PROJECTS
-
-    $('#ystioBu').on('click', function () {
-        ga('send', 'event', 'myProjects', 'click', 'Ystio');
-    });
-
-    $('#flowjoyBu').on('click', function () {
-        ga('send', 'event', 'myProjects', 'click', 'Flowjoy');
-    });
-
-    $('#leanCinemaBu').on('click', function () {
-        ga('send', 'event', 'myProjects', 'click', 'Lean Cinema');
-    });
-
 
     //ME
 
-    $('#twitterBu').on('click', function () {
-        ga('send', 'event', 'me', 'click', 'Twitter');
+
+
+    $('#hackcinema').on('click', function () {
+        ga('send', 'event', 'me', 'click', 'Hackcinema');
     });
 
-    $('#linkedInBu').on('click', function () {
-        ga('send', 'event', 'me', 'click', 'Linkedin');
+    $('#Arrels').on('click', function () {
+        ga('send', 'event', 'me', 'click', 'Arrels');
+    });
+
+    $('#GitHub').on('click', function () {
+        ga('send', 'event', 'me', 'click', 'GitHub');
     });
 
 

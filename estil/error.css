@@ -10,18 +10,22 @@
             text-decoration: none;
             color: #FFF;
             font-weight: bold;
+            background-color: #3333ff;
+            transition: all 1s ease-in-out;
+
         }
         a:hover {
             background-color: #e6e6ff;
             color: #3333ff;
             padding: 0, 2em, 0, 2em;
+            transition: all 0.1s;
         }
         ul {
             font-family: 'VT323';
             list-style-type: none;
             text-align: center;
             padding: 0;
-            
+
         }
         p {
             font-family: 'VT323';
@@ -45,15 +49,15 @@
             width: 100%;
             text-align: center;
         }
-        
+
         .contingut ul {
             list-style-type: none;
             text-align: center;
             padding: 0;
-            
+
         }
-        
-        
+
+
  /* Blinking stuff */
  .blink {
   animation: blink-animation 0.8s steps(5, start) infinite;
