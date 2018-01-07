@@ -1,48 +1,27 @@
-//EVENTS ANALYTICS
-$(document).ready(function () {
+//EVENTS FOR GOOGLE ANALYTICS. I LIKE TO KNOW ABOUT MY STALKERS
 
+document.addEventListener("DOMContentLoaded", function (event) {
+    //Getting all the buttons to Track
+    const buttons = Array.from(document.querySelectorAll('li.infla'));
+    
+    //Creating GA events
+    buttons.map((bt) => {
+       
+        //Button ID
+        let id = bt.children[0].id;
+        
+        //DOM element
+        let el = document.querySelector(`#${id}`);
+        
+        //Getting Text
+        let txt = el.innerHTML;
+        
+        //Setting up the listener
+        el.addEventListener('click', () => {
+            //Launching Google Analytics event
+            ga('send', 'event', 'me', 'click', txt);
+        })
 
-
-    //ME
-
-
-
-    $('#hackcinema').on('click', function () {
-        ga('send', 'event', 'me', 'click', 'Hackcinema');
-    });
-
-    $('#Arrels').on('click', function () {
-        ga('send', 'event', 'me', 'click', 'Arrels');
-    });
-
-    $('#GitHub').on('click', function () {
-        ga('send', 'event', 'me', 'click', 'GitHub');
-    });
-
-
-
-
-    //VINTAGE CREATIONS
-
-    $('#dobleValorBu').on('click', function () {
-        ga('send', 'event', 'vintageCreations', 'click', 'Doble Valor');
-    });
-
-    $('#videoCvBu').on('click', function () {
-        ga('send', 'event', 'vintageCreations', 'click', 'Vídeo CV');
-    });
-
-    $('#webTvBu').on('click', function () {
-        ga('send', 'event', 'vintageCreations', 'click', 'WebTV');
-    });
-
-    $('#diccionariBu').on('click', function () {
-        ga('send', 'event', 'vintageCreations', 'click', 'Diccionari');
-    });
-
-    $('#namingBu').on('click', function () {
-        ga('send', 'event', 'vintageCreations', 'click', 'Naming Tool');
-    });
-
+    })
 
 });

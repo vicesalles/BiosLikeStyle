@@ -3,31 +3,31 @@
 Infla = {
     //element is a dom class. maxH is optional and represents maxHeigt desired
     infla: function(element, maxH) {
-        console.log(element);
+        
         //Getting all given class elements
         elementsHtml = document.getElementsByClassName(element);
-        console.log(elementsHtml);
+     
         //Storing all elements within an Array
         aInflar = [].slice.call(elementsHtml);
-        //console.log(aInflar);
+     
         //For each element:
         for (i = 0; i < aInflar.length; i++) {
 
-            console.log('An element: ' + i);
+           
             //Getting container width
             ampladaDiv = elementsHtml.item(i).clientWidth;
-            console.log('Div width: ' + ampladaDiv);
+            //console.log('Div width: ' + ampladaDiv);
 
             //If the element has a text child...
             if (elementsHtml.item(i).children[0].firstChild.length) {
 
                 //Getting text length
                 llargadaText = elementsHtml.item(i).children[0].firstChild.length;
-                console.log('This string has ' + llargadaText + ' characters.');
+                //console.log('This string has ' + llargadaText + ' characters.');
 
                 //Calculating new font size
                 midaTipo = Mates.arrodoneix(ampladaDiv / llargadaText, 0);
-                console.log('We\'ll inflate this text until it gets: ' + midaTipo +' pt.');
+                //console.log('We\'ll inflate this text until it gets: ' + midaTipo +' pt.');
 
                 //If we passed a maxH paramater and the new font size is bigger than it....
                     if (midaTipo > maxH) {
